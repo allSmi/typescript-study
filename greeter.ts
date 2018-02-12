@@ -155,35 +155,50 @@
 
 // let myStr: string = myArray[0];
 
-class Animal {
-    name: string;
-    constructor(theName: string) { this.name = theName; }
-    move(distanceInMeters: number = 0) {
-        console.log(`${this.name} moved ${distanceInMeters}m.`);
-    }
-}
+// class Animal {
+//     name: string;
+//     constructor(theName: string) { this.name = theName; }
+//     move(distanceInMeters: number = 0) {
+//         console.log(`${this.name} moved ${distanceInMeters}m.`);
+//     }
+// }
 
-class Snake extends Animal {
-    constructor(name: string) { super(name); }
-    move(distanceInMeters = 5) {
-        console.log("Slithering...");
-        super.move(distanceInMeters);
-    }
-}
+// class Snake extends Animal {
+//     constructor(name: string) { super(name); }
+//     move(distanceInMeters = 5) {
+//         console.log("Slithering...");
+//         super.move(distanceInMeters);
+//     }
+// }
 
-class Horse extends Animal {
-    constructor(name: string) { super(name); }
-    move(distanceInMeters = 45) {
-        console.log("Galloping...");
-        super.move(distanceInMeters);
-    }
-}
+// class Horse extends Animal {
+//     constructor(name: string) { super(name); }
+//     move(distanceInMeters = 45) {
+//         console.log("Galloping...");
+//         super.move(distanceInMeters);
+//     }
+// }
 
-let sam = new Snake("Sammy the Python");
-let tom: Animal = new Horse("Tommy the Palomino");
+// let sam = new Snake("Sammy the Python");
+// let tom: Animal = new Horse("Tommy the Palomino");
 
-sam.move();
-tom.move(34);
+// sam.move();
+// tom.move(34);
+
+// let someValue: any = "this is a string";
+// let strLength: number = (<string>someValue).length;
+
+// let { a, b } = { a: "baz", b: 101 };
+
+// let o = {
+//     a: "foo",
+//     b: 12,
+//     c: "bar"
+// };
+// let { a, c } = o;
+
+enum A { a = 5, b, c = 'haha' }
+console.log(A.a);
 
 
 
