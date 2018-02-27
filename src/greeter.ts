@@ -1,3 +1,6 @@
+// import { a } from "./a";
+// a()
+
 // function greeter(person: string) {
 //     return "Hello, " + person;
 // }
@@ -197,8 +200,45 @@
 // };
 // let { a, c } = o;
 
-enum A { a = 5, b, c = 'haha' }
-console.log(A.a);
+// enum A { a = 5, b, c = 'haha' }
+// console.log(A.a);
+
+// enum A { c = 'haha', a, b }
+// console.log(A.a);//Enum member must have initializer.
+
+// enum Color { Red, Green, Blue };
+
+// class A {
+//     private name;
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+// let x = new A('haha');
+// console.log(x.name);
+
+// console.log(1);
+
+interface Alarm {
+    alert(): any;
+}
+interface Light {
+    lightOn(): any;
+    lightOff(): any;
+}
+class Car implements Alarm, Light {
+    alert() {
+        console.log('Car alert');
+    }
+    lightOn() {
+        console.log('Car light on');
+    }
+    lightOff() {
+        console.log('Car light off');
+    }
+}
+
+
 
 
 
